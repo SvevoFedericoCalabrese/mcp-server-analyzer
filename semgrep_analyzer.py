@@ -8,13 +8,13 @@ def analyze_with_semgrep(owner_name, repo_name):
     repo_dir = os.path.join(".", "repos", repo_name)
 
     try:
-        # Esegui Semgrep forzando UTF-8 e gestendo errori di decodifica
+       
         result = subprocess.run(
             [SEM_PATH, "--config=auto", "--json", repo_dir],
             capture_output=True,
             text=True,
             encoding="utf-8",
-            errors="replace"  # sostituisce caratteri non decodificabili
+            errors="replace" 
         )
 
         if result.returncode != 0:

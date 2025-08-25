@@ -1,0 +1,104 @@
+{
+  "version": "1.133.0",
+  "results": [],
+  "errors": [],
+  "paths": {
+    "scanned": [
+      "repos\\mailtrap-mcp\\.eslintrc.js",
+      "repos\\mailtrap-mcp\\.github\\pull_request_template.md",
+      "repos\\mailtrap-mcp\\.github\\workflows\\main.yml",
+      "repos\\mailtrap-mcp\\.gitignore",
+      "repos\\mailtrap-mcp\\.tool-versions",
+      "repos\\mailtrap-mcp\\CHANGELOG.md",
+      "repos\\mailtrap-mcp\\CODE_OF_CONDUCT.md",
+      "repos\\mailtrap-mcp\\jest\\setEnvVars.js",
+      "repos\\mailtrap-mcp\\jest.config.js",
+      "repos\\mailtrap-mcp\\LICENSE.txt",
+      "repos\\mailtrap-mcp\\package-lock.json",
+      "repos\\mailtrap-mcp\\package.json",
+      "repos\\mailtrap-mcp\\README.md",
+      "repos\\mailtrap-mcp\\src\\client.ts",
+      "repos\\mailtrap-mcp\\src\\config\\index.ts",
+      "repos\\mailtrap-mcp\\src\\index.ts",
+      "repos\\mailtrap-mcp\\src\\tools\\sendEmail\\__tests__\\sendEmail.test.ts",
+      "repos\\mailtrap-mcp\\src\\tools\\sendEmail\\index.ts",
+      "repos\\mailtrap-mcp\\src\\tools\\sendEmail\\schema.ts",
+      "repos\\mailtrap-mcp\\src\\tools\\sendEmail\\sendEmail.ts",
+      "repos\\mailtrap-mcp\\src\\types\\mailtrap.ts",
+      "repos\\mailtrap-mcp\\tsconfig.build.json",
+      "repos\\mailtrap-mcp\\tsconfig.json"
+    ]
+  },
+  "time": {
+    "rules": [],
+    "rules_parse_time": 2.2192373275756836,
+    "profiling_times": {
+      "config_time": 1.870417833328247,
+      "core_time": 4.202509880065918,
+      "ignores_time": 0.0017962455749511719,
+      "total_time": 6.075908899307251
+    },
+    "parsing_time": {
+      "total_time": 0.0,
+      "per_file_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "scanning_time": {
+      "total_time": 0.9277229309082031,
+      "per_file_time": {
+        "mean": 0.014725760808066719,
+        "std_dev": 0.002171511510550816
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "matching_time": {
+      "total_time": 0.0,
+      "per_file_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_files": []
+    },
+    "tainting_time": {
+      "total_time": 0.0,
+      "per_def_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_defs": []
+    },
+    "fixpoint_timeouts": [],
+    "prefiltering": {
+      "project_level_time": 0.0,
+      "file_level_time": 0.0,
+      "rules_with_project_prefilters_ratio": 0.0,
+      "rules_with_file_prefilters_ratio": 0.9764288020665159,
+      "rules_selected_ratio": 0.03325799160477882,
+      "rules_matched_ratio": 0.03325799160477882
+    },
+    "targets": [],
+    "total_bytes": 0,
+    "max_memory_bytes": 1135596544
+  },
+  "engine_requested": "OSS",
+  "skipped_rules": []
+}

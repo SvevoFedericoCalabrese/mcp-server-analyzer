@@ -1,0 +1,165 @@
+{
+  "version": "1.133.0",
+  "results": [
+    {
+      "check_id": "dockerfile.security.missing-user-entrypoint.missing-user-entrypoint",
+      "path": "repos\\filesystem\\dockerfile",
+      "start": {
+        "line": 20,
+        "col": 1,
+        "offset": 370
+      },
+      "end": {
+        "line": 20,
+        "col": 42,
+        "offset": 411
+      },
+      "extra": {
+        "message": "By not specifying a USER, a program in the container may run as 'root'. This is a security hazard. If an attacker can control a process running as root, they may have control over the container. Ensure that the last USER in a Dockerfile is a USER other than 'root'.",
+        "fix": "USER non-root\nENTRYPOINT [\"uv\", \"run\", \"./src/main.py\"]",
+        "metadata": {
+          "cwe": [
+            "CWE-269: Improper Privilege Management"
+          ],
+          "category": "security",
+          "technology": [
+            "dockerfile"
+          ],
+          "confidence": "MEDIUM",
+          "owasp": [
+            "A04:2021 - Insecure Design"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A04_2021-Insecure_Design"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Improper Authorization"
+          ],
+          "source": "https://semgrep.dev/r/dockerfile.security.missing-user-entrypoint.missing-user-entrypoint",
+          "shortlink": "https://sg.run/k281"
+        },
+        "severity": "ERROR",
+        "fingerprint": "requires login",
+        "lines": "requires login",
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "errors": [],
+  "paths": {
+    "scanned": [
+      "repos\\filesystem\\.github\\actions\\setup\\action.yml",
+      "repos\\filesystem\\.github\\workflows\\code-lint.yml",
+      "repos\\filesystem\\.gitignore",
+      "repos\\filesystem\\.pre-commit-config.yaml",
+      "repos\\filesystem\\.python-version",
+      "repos\\filesystem\\dockerfile",
+      "repos\\filesystem\\LICENSE",
+      "repos\\filesystem\\makefile",
+      "repos\\filesystem\\pyproject.toml",
+      "repos\\filesystem\\README.md",
+      "repos\\filesystem\\src\\__init__.py",
+      "repos\\filesystem\\src\\core\\__init__.py",
+      "repos\\filesystem\\src\\core\\config.py",
+      "repos\\filesystem\\src\\core\\enums.py",
+      "repos\\filesystem\\src\\core\\formatters.py",
+      "repos\\filesystem\\src\\core\\meta.py",
+      "repos\\filesystem\\src\\core\\types.py",
+      "repos\\filesystem\\src\\core\\validations.py",
+      "repos\\filesystem\\src\\main.py",
+      "repos\\filesystem\\src\\tools\\__init__.py",
+      "repos\\filesystem\\src\\tools\\create_directory.py",
+      "repos\\filesystem\\src\\tools\\directory_tree.py",
+      "repos\\filesystem\\src\\tools\\edit_file.py",
+      "repos\\filesystem\\src\\tools\\get_allowed_paths.py",
+      "repos\\filesystem\\src\\tools\\get_file_info.py",
+      "repos\\filesystem\\src\\tools\\list_directory.py",
+      "repos\\filesystem\\src\\tools\\list_directory_with_size.py",
+      "repos\\filesystem\\src\\tools\\move_file.py",
+      "repos\\filesystem\\src\\tools\\read_file.py",
+      "repos\\filesystem\\src\\tools\\read_multiple_files.py",
+      "repos\\filesystem\\src\\tools\\search_files.py",
+      "repos\\filesystem\\src\\tools\\write_file.py",
+      "repos\\filesystem\\uv.lock"
+    ]
+  },
+  "time": {
+    "rules": [],
+    "rules_parse_time": 2.349825143814087,
+    "profiling_times": {
+      "config_time": 1.9605562686920166,
+      "core_time": 5.077693462371826,
+      "ignores_time": 0.00177001953125,
+      "total_time": 7.041269779205322
+    },
+    "parsing_time": {
+      "total_time": 0.0,
+      "per_file_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "scanning_time": {
+      "total_time": 1.4270083904266357,
+      "per_file_time": {
+        "mean": 0.015510960765506919,
+        "std_dev": 0.001618556220389179
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "matching_time": {
+      "total_time": 0.0,
+      "per_file_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_files": []
+    },
+    "tainting_time": {
+      "total_time": 0.0,
+      "per_def_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_defs": []
+    },
+    "fixpoint_timeouts": [],
+    "prefiltering": {
+      "project_level_time": 0.0,
+      "file_level_time": 0.0,
+      "rules_with_project_prefilters_ratio": 0.0,
+      "rules_with_file_prefilters_ratio": 0.9782330345710627,
+      "rules_selected_ratio": 0.030872101294636505,
+      "rules_matched_ratio": 0.030872101294636505
+    },
+    "targets": [],
+    "total_bytes": 0,
+    "max_memory_bytes": 1113879232
+  },
+  "engine_requested": "OSS",
+  "skipped_rules": []
+}
